@@ -26,7 +26,7 @@ do
 	end;
 	local function L(Q, L)
 		if type(writefile) ~= "function" then
-			L.Text = "Error: Executor tidak mendukung writefile!";
+			L.Text = "Error: Executor not support writefile";
 			L.TextColor3 = Color3.fromRGB(255, 95, 95);
 			return;
 		end;
@@ -45,7 +45,7 @@ do
 				return D:JSONDecode(M);
 			end);
 		if not G or type(p) ~= "table" or type(p.looks) ~= "table" then
-			L.Text = "Format JSON tidak valid!";
+			L.Text = "Format JSON not valid";
 			L.TextColor3 = Color3.fromRGB(255, 95, 95);
 			return;
 		end;
@@ -88,7 +88,7 @@ do
 			end;
 		end;
 		writefile(n, D:JSONEncode(A));
-		L.Text = string.format("Berhasil! %d look di-restore. Klik Refresh Library di UI utama!", y);
+		L.Text = string.format("Berhasil! %d look restored", y);
 		L.TextColor3 = Color3.fromRGB(100, 235, 145);
 	end;
 	local e = (typeof(gethui) == "function" and gethui()) or game:GetService("CoreGui") or (game:GetService("Players")).LocalPlayer:WaitForChild("PlayerGui");
@@ -188,7 +188,7 @@ do
 		end;
 		local D = ((P.Text or "")):match("^%s*(.-)%s*$");
 		if not D:match("^https?://") then
-			z.Text = "Masukkan link file JSON yang valid!";
+			z.Text = "add a valid JSON";
 			z.TextColor3 = Color3.fromRGB(255, 95, 95);
 			return;
 		end;
