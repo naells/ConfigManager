@@ -1,0 +1,19 @@
+{
+  "voteDelay": 2,
+  "librarySource": "Local",
+  "builderIntensity": "Balanced",
+  "autoThemeMatch": true,
+  "autoSteal": false,
+  "cloudRepoUrl": "https://github.com/naells/ConfigManager/tree/main/config",
+  "autoStepOut": false,
+  "activeLookId": "look_1795658837_2748",
+  "stepOutDelay": 15,
+  "autoMakeupFreeplay": false,
+  "autoMakeup": true,
+  "autoLateJoin": false,
+  "voteMode": "Competitive (2-3★ Safe)",
+  "autoSaveBuilt": false,
+  "autoVote": true,
+  "activeCloudLookId": "look_1795679067_8760",
+  "autoBuildTheme": false
+}
